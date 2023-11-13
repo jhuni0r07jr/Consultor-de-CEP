@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Página inicial</title>
+</head>
+<body>
+    <header>
+        <img src="Imagens/Img_gps.png" alt="Imagem de ponto de gps">
+        <a href="https://buscacepinter.correios.com.br/app/localidade_logradouro/index.php" target="_blank">Não sabe o seu CEP?</a>
+    </header>
+    <main>
+        <h2>Consultor de CEP</h2>
+        
+        <div class="Cep">
+
+            <img src="Imagens/Ponteiro.png">
+
+            <div class="estilo">
+                <div class="Resultado">
+                <label for="cep">Cep: </label>
+                <input type="number" name="cep" id="cep" autocomplete="off" maxlength="8" placeholder="00000-000">
+            </div>
+
+            <div class="Resultado">
+                <label for="Rua">Rua: </label>
+                <input type="text" id="Rua" name="Rua" disabled>
+            </div>
+            
+            <div class="Resultado">
+                <label for="Bairro">Bairro: </label>
+                <input type="text" id="Bairro" name="Bairro" disabled>
+            </div>
+
+            <div class="Resultado">
+                <label for="Cidade">Cidade: </label>
+                <input type="text" id="Cidade" name="Cidade" disabled>
+            </div>
+
+            <div class="Resultado">
+                <label for="Estado">Estado: </label>
+                <input type="text" id="Estado" name="Estado" disabled>
+            </div>
+            <button onclick="Consultar()">Consultar</button>
+        </div>
+    </main>
+    <script src="CEP.js"></script>
+</body>
+</html>
